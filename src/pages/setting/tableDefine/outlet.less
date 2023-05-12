@@ -1,0 +1,25 @@
+.outlet-container {
+    .ant-menu {
+        &-item {
+
+
+            &:first-child .ant-menu-title-content span {
+                display: block;
+            }
+
+            .ant-menu-title-content {
+                span {
+                    display: none;
+                }
+            }
+
+            &:hover .ant-menu-title-content span {
+                display: block;
+            }
+        }
+
+        &-item-disabled {
+            color: inherit !important;
+        }
+    }
+}

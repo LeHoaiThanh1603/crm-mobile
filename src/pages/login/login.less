@@ -1,0 +1,101 @@
+@import '~/src/e2e/variables.less';
+.login-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  font-weight: 700;
+  font-style: normal;
+  background: linear-gradient(-45deg, #ee7752, #1d3b26, #050607, #23d5ab);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  // &::after {
+  //   position: absolute;
+  //   color: #23a6d5;
+  //   font-weight: bold;
+  //   font-size: 100px;
+  //   content: 'PMS';
+  // }
+
+  .login-f {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 416px;
+    max-width: 416px;
+    padding: 2.5rem;
+    background: #ffffff;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.123);
+
+    .head {
+      font-weight: 700;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    label {
+      color: #3e5c76;
+      font-weight: 400;
+      font-size: 12px;
+      font-family: 'Roboto', sans-serif;
+      opacity: 0.7;
+    }
+
+    button {
+      width: 200px;
+      height: 50px;
+      margin-top: 5%;
+      color: white;
+      font-weight: 900;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      background: #3e5c76;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      transition: 0.2s;
+
+      &:hover {
+        background: rgba(62, 92, 118, 0.8);
+      }
+    }
+
+    .l-button img {
+      animation: loading 1s infinite linear;
+    }
+
+    @keyframes loading {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .select-login {
+    font-size: 16px !important;
+  }
+}

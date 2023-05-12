@@ -1,0 +1,102 @@
+.menu-sidebar-container {
+  .groupitem {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  .itemt-group {
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 10px;
+    background: #e6f7ff;
+    .bt {
+      display: flex;
+      gap: 10px;
+    }
+    .delete {
+      &:hover {
+        color: red;
+      }
+      opacity: 0;
+    }
+    .edit {
+      &:hover {
+        color: red;
+      }
+      opacity: 0;
+    }
+    &:hover .edit {
+      opacity: 1;
+    }
+    &:hover .delete {
+      opacity: 1;
+    }
+  }
+  .menu,
+  .all-menu {
+    border-right: 1px solid #fafafa;
+    border-left: 1px solid #fafafa;
+    outline: none;
+    user-select: none;
+  }
+  .parent,
+  .all-menu {
+    height: auto;
+    overflow: hidden;
+    background: #ffffff;
+    &-label {
+      height: 40px;
+      padding-left: 15px;
+      &:hover {
+        color: #5a95ff;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .child {
+    height: 40px;
+    padding-left: 35px;
+    background: #fafafa;
+    border-right: 3px solid transparent;
+    transition: all 0.1s linear;
+    &-label {
+      height: 100%;
+      &:hover {
+        color: #5a95ff;
+        cursor: pointer;
+      }
+    }
+  }
+  .active {
+    background: #e6f7ff;
+  }
+  .child-active {
+    background: #e6f7ff;
+    border-right: 3px solid #1890ff;
+  }
+  .border-active {
+    border-right: 3px solid #1890ff;
+  }
+  .border-trans {
+    border-right: 3px solid transparent;
+  }
+
+  .hide {
+    height: 0;
+    min-height: 0;
+    overflow: hidden;
+    line-height: 0;
+    visibility: hidden;
+    transition: all 0.1s linear;
+  }
+}
+
+.onSelectGroup {
+  color: white;
+  background: #98d1ff !important;
+}
+.groupitem img {
+  transform: rotate(-180deg);
+}

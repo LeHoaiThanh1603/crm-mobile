@@ -1,0 +1,113 @@
+@import '../../../e2e/variables.less';
+
+.hotel-define-container {
+  position: relative;
+  height: 100%;
+  .btn-setting-save {
+    margin: 0 0 0.625rem 0.5rem;
+  }
+  .uploader-wrapper {
+    max-width: 350px;
+    max-height: 350px;
+    .uploader-img {
+      flex-shrink: 0;
+      width: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: contain;
+    }
+  }
+  .setting {
+    width: 100%;
+    padding-top: 0.625rem;
+    padding-left: 3.75rem;
+    &-content {
+      width: 100%;
+      text-align: center;
+      &-info,
+      &-price,
+      &-upload {
+        margin: 0 0.625rem 0 0.625rem;
+        background-color: @font-color;
+        border-radius: 10px;
+        box-shadow: @box-shadow;
+      }
+      &-info {
+        padding: 1.5625rem 0.9375rem 0 0.9375rem;
+        &-row {
+          height: 70px;
+          &-division,
+          &-namehotel {
+            display: flex;
+          }
+
+          &-label {
+            display: flex;
+            align-items: center;
+            width: auto;
+            padding-right: 0.625rem;
+          }
+
+          &-input {
+            width: 100%;
+          }
+        }
+        &-address,
+        &-tax,
+        &-phone,
+        &-fax {
+          display: flex;
+          height: 70px;
+        }
+        &-label {
+          width: 54px;
+          margin-right: 0.4375rem;
+          &-address {
+            width: 50px;
+            margin-right: 0.4375rem;
+          }
+        }
+        &-input {
+          width: 100%;
+          .ant-input-number,
+          .input-component {
+            width: 100%;
+          }
+        }
+      }
+      &-price {
+        padding: 1.5625rem 0.9375rem 0 0.9375rem;
+        &-adult,
+        &-child,
+        &-exctrabed,
+        &-roomnumber,
+        &-webhotel {
+          display: flex;
+          justify-content: space-between;
+          height: 70px;
+        }
+        &-label {
+          width: 130px;
+          margin-right: 0.625rem;
+          transform: translateY(2px);
+          &-longlb {
+            width: 130px;
+            margin-right: 0.625rem;
+            transform: translateY(-7px);
+          }
+        }
+
+        &-input {
+          width: 100%;
+
+          .ant-input-number {
+            width: 100%;
+          }
+        }
+      }
+      &-upload {
+        position: relative;
+      }
+    }
+  }
+}

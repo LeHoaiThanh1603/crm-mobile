@@ -1,0 +1,27 @@
+.header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+.title {
+    width: 150px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn {
+    text-align: end;
+    border: none;
+}

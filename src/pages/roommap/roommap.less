@@ -1,0 +1,220 @@
+@import '~/src/e2e/variables.less';
+
+.roommap-container {
+  width: 100vw;
+  height: calc(100vh - 4.125rem);
+  margin: 0;
+  padding: 0;
+  // font-family: Roboto sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+  .header-container {
+    height: 4rem;
+
+    .status-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0.8125rem;
+
+      .status-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        margin: 0.625rem;
+        padding: 0.5625rem;
+        background-color: #3e5c76;
+        border-radius: 0.625rem;
+
+        p {
+          margin-bottom: 0;
+          color: @font-color;
+          font-weight: 600;
+          font-size: 0.75rem;
+        }
+
+        p:nth-child(2) {
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    .function-container {
+      display: flex;
+      gap: 9px;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%;
+      padding: 1.75rem;
+
+      .buttonList {
+        width: fit-content;
+      }
+
+      .function-item {
+        z-index: 101;
+        display: flex;
+        gap: 0.625rem;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        margin-right: 0.875rem;
+        padding: 0.625rem;
+        background-color: #3e5c76;
+        border-radius: 0.625rem;
+        box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+
+        p {
+          margin-bottom: 0;
+          // color: @font-color;
+          // font-weight: 900;
+        }
+
+        img {
+          height: 1.25rem;
+          padding-bottom: 0.125rem;
+        }
+
+        .icon-explain-button {
+          height: 1.875rem;
+        }
+      }
+
+      .search-container {
+        position: relative;
+        z-index: 100;
+        cursor: default;
+
+        input::placeholder {
+          font-size: 13px;
+        }
+
+        .ant-input {
+          font-size: 0.95rem;
+        }
+
+        .search-expand-item {
+          position: absolute;
+          right: 0%;
+          z-index: 5;
+          align-items: center;
+          justify-content: center;
+          width: 88%;
+
+          .ant-select-selector {
+            height: 100% !important;
+            border-radius: 10px !important;
+          }
+        }
+
+        .select-search {
+          width: 100%;
+
+          .select-content {
+            background-color: white;
+          }
+          // height: 1.5625rem;
+          // padding-bottom: 1px;
+          // border-radius: 0.625rem;
+          // box-shadow: inset 0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+
+          // .arrow-left {
+          //   transform: rotate(270deg);
+          // }
+
+          @media (max-width: 1200px) {
+            // width: 9.375rem;
+          }
+        }
+      }
+
+      @media (max-width: 1200px) {
+        justify-content: flex-end;
+      }
+    }
+
+    .page-name-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 100%;
+
+      .page-name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 8.75rem;
+        height: 3.0625rem;
+        padding: 0.625rem;
+
+        background: #3e5c76;
+        border-radius: 1.25rem 0 0 1.25rem;
+        box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+
+        p {
+          margin-bottom: 0;
+          color: @font-color;
+          font-weight: 900;
+          font-size: 1.25rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .ant-input::placeholder {
+    font-size: 0.95rem;
+  }
+}
+
+.floors-container {
+  height: calc(100% - 4rem);
+  overflow: auto;
+  background: #e5e9ec;
+  border-radius: 0.625rem 0.625rem 0 0;
+
+  .sticky-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: inline-block;
+    flex-shrink: 0;
+    min-width: 5.5rem;
+    background: #e5e9ec;
+  }
+
+  .room-container {
+    max-width: calc(100% - 5.5rem);
+    height: 100%;
+  }
+
+  .ant-spin {
+    height: 80vh !important;
+    max-height: none !important;
+  }
+}
+
+.roommap-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+html {
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 12px;
+  }
+}

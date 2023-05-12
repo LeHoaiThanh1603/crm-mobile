@@ -1,0 +1,49 @@
+.hotelService-container {
+  .delete-all-btn {
+    width: 130px;
+  }
+  .uploadFile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: 30px;
+    padding: 10px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.2s;
+    &:hover {
+      color: rgb(113, 157, 223);
+      border: 1px solid rgb(113, 157, 223);
+    }
+    input {
+      position: absolute;
+      cursor: pointer;
+      opacity: 11;
+      opacity: 0;
+    }
+  }
+  .files {
+    position: relative;
+    padding: 10px;
+    span {
+      position: absolute;
+      top: 0;
+      color: red;
+      font-size: 20px;
+      transform: rotate(45deg);
+      cursor: pointer;
+    }
+  }
+}
+.itemSelectChannelSend {
+  padding: 5px 10px;
+  color: #000;
+}
+
+.itemSelectChannelSend:hover {
+  background-color: rgba(204, 236, 236, 0.63);
+  cursor: pointer;
+}

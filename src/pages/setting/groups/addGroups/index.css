@@ -1,0 +1,62 @@
+/* .dieuKien table tbody, td, tfoot, th, tbody, tr{
+    margin-top: 100px !important;
+} */
+/* Css reponsive theo điều kiện */
+
+@media(max-width: 767px) {
+    .input1{
+        width: 100px;
+        padding: 6px;
+        border: 1px solid #d9d9d9;
+    }
+    .input2{
+        width: 50px;
+        padding: 6px;
+        border: 1px solid #d9d9d9;
+    }
+    .input3{
+        width: 100px;
+        padding: 6px;
+        border: 1px solid #d9d9d9;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .input1{
+        width: 140px;
+        padding: 6px;
+        border: 1px solid #d9d9d9;
+    }
+    .input2{
+        width: 50px;
+        padding: 6px;
+        border: 1px solid #d9d9d9;
+    }
+    .input3{
+        width: 140px;
+        padding: 6px;
+        border: 1px solid #d9d9d9;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tableWidth{
+        max-width: 700px;
+    }
+    .input1{
+        width: 200px;
+        padding: 6px;
+        border: 1px solid #d9d9d9;
+    }
+    .input2{
+        width: 100px;
+        padding: 6px;
+        border: 1px solid #d9d9d9;
+    }
+    .input3{
+        width: 200px;
+        padding: 6px;
+        border: 1px solid #d9d9d9;
+    }
+}
+/* Css reponsive theo điều kiện */

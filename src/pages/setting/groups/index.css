@@ -1,0 +1,108 @@
+.tab-content {
+    display: flex;
+    flex-direction: column;
+}
+.tab-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    border-bottom: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.tab span {
+    transition: all 0.1s linear;
+}
+
+.tab:hover > span {
+    color: #5a95ff;
+}
+
+.tab.active {
+    border-bottom: 1px solid white;
+    background: #e6f7ff;
+}
+
+.tab-panels {
+}
+
+.tab-panel {
+    /* padding: 1rem; */
+}
+
+.btnHideSidebar {
+    transform: translateY(-30px);
+}
+.hideSidebar {
+    transform: translateX(calc(-100% - 40px));
+}
+.btnCreate {
+    background-color: #2b8bd2;
+    border: 1px solid #2b8bd2;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 6px 12px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 90vh;
+    margin-right: 30px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 16px;
+    margin-top: 95px;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+.adcampaignWrapper {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 6px 16px;
+    border-radius: 16px;
+    height: calc(100vh - 50px);
+    /* margin-left: 280px; */
+    transition: all 0.2s linear;
+    /* width: 166vh; */
+}
+.adcampainFull {
+    margin-left: 0;
+    width: 194vh;
+}
+
+.row-even {
+    background-color: #fff !important;
+}
+
+.row-odd {
+    background-color: #ececebfa !important;
+}
+@media (max-width: 1023px) {
+    .MenuHide{
+        display: none;
+    }
+    .menuHideWidth{
+        width: 85vh;
+    }
+}

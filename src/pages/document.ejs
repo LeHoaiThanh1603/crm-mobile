@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="keywords"
+      content="antd,umi,umijs,ant design,Scaffolding, layout, Ant Design, project, Pro, admin, console, homepage, out-of-the-box, middle and back office, solution, component library"
+    />
+    <meta
+      name="description"
+      content="
+    An out-of-box UI solution for enterprise applications as a React boilerplate."
+    />
+    <meta
+      name="description"
+      content="
+      Out-of-the-box mid-stage front-end/design solution."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>CRM Onexus</title>
+    <link rel="icon" href="<%= context.config.publicPath +'favicon.ico'%>" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src='/env.js'></script>
+  </head>
+  <body>
+    <noscript>Out-of-the-box mid-stage front/design solution!</noscript>
+    <div id="root">
+      <style>
+        html,
+        body,
+        #root {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        #root {
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+        }
+        .page-loading-warp {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 98px;
+        }
+        .ant-spin {
+          position: absolute;
+          display: none;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          color: rgba(0, 0, 0, 0.65);
+          color: #1890ff;
+          font-size: 14px;
+          font-variant: tabular-nums;
+          line-height: 1.5;
+          text-align: center;
+          list-style: none;
+          opacity: 0;
+          -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+            -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          -webkit-font-feature-settings: 'tnum';
+          font-feature-settings: 'tnum';
+        }
+
+        .ant-spin-spinning {
+          position: static;
+          display: inline-block;
+          opacity: 1;
+        }
+
+        .ant-spin-dot {
+          position: relative;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          font-size: 20px;
+        }
+
+        .ant-spin-dot-item {
+          position: absolute;
+          display: block;
+          width: 9px;
+          height: 9px;
+          background-color: #1890ff;
+          border-radius: 100%;
+          -webkit-transform: scale(0.75);
+          -ms-transform: scale(0.75);
+          transform: scale(0.75);
+          -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          opacity: 0.3;
+          -webkit-animation: antspinmove 1s infinite linear alternate;
+          animation: antSpinMove 1s infinite linear alternate;
+        }
+
+        .ant-spin-dot-item:nth-child(1) {
+          top: 0;
+          left: 0;
+        }
+
+        .ant-spin-dot-item:nth-child(2) {
+          top: 0;
+          right: 0;
+          -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+        }
+
+        .ant-spin-dot-item:nth-child(3) {
+          right: 0;
+          bottom: 0;
+          -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+        }
+
+        .ant-spin-dot-item:nth-child(4) {
+          bottom: 0;
+          left: 0;
+          -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+        }
+
+        .ant-spin-dot-spin {
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-animation: antrotate 1.2s infinite linear;
+          animation: antRotate 1.2s infinite linear;
+        }
+
+        .ant-spin-lg .ant-spin-dot {
+          width: 32px;
+          height: 32px;
+          font-size: 32px;
+        }
+
+        .ant-spin-lg .ant-spin-dot i {
+          width: 14px;
+          height: 14px;
+        }
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          .ant-spin-blur {
+            background: #fff;
+            opacity: 0.5;
+          }
+        }
+
+        @-webkit-keyframes antSpinMove {
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes antSpinMove {
+          to {
+            opacity: 1;
+          }
+        }
+
+        @-webkit-keyframes antRotate {
+          to {
+            -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+          }
+        }
+
+        @keyframes antRotate {
+          to {
+            -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+          }
+        }
+
+        .LoadingLogo2 {
+          position: absolute;
+
+          z-index: 555;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70px;
+          height: 70px;
+
+          animation: rotate 1s linear infinite;
+        }
+
+        .LoadingLogo2 img {
+          position: absolute;
+          height: 30px;
+        }
+        .LoadingLogo2 img:nth-child(1) {
+          top: 0;
+          transform: rotate(-90deg);
+        }
+        .LoadingLogo2 img:nth-child(2) {
+          bottom: 0;
+          transform: rotate(90deg);
+        }
+        .LoadingLogo2 img:nth-child(3) {
+          left: 0;
+          transform: rotate(180deg);
+        }
+        .LoadingLogo2 img:nth-child(4) {
+          right: 0;
+        }
+
+        @keyframes rotate {
+          0% {
+            transform: rotate(-360deg);
+          }
+        }
+
+        .content-loading {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          align-content: flex-start;
+          align-items: center;
+          justify-content: center;
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden;
+          background: rgb(255, 255, 255);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .dot1 {
+          position: absolute;
+          width: 70px;
+          height: 70px;
+          border: 5px solid transparent;
+          border-top: 5px solid rgb(81, 186, 255);
+          border-bottom: 5px solid rgb(39, 194, 255);
+          border-radius: 50%;
+
+          animation: animate3 1s linear infinite;
+        }
+        .dot2 {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          border: 5px solid transparent;
+          border-top: 5px solid rgb(81, 186, 255);
+          border-bottom: 5px solid rgb(39, 194, 255);
+          border-radius: 50%;
+
+          box-shadow: 10px 0px 40px rgb(71, 151, 255);
+          animation: animate3 1s linear infinite;
+        }
+        .dot4 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border: 5px solid transparent;
+          border-right: 5px solid rgb(88, 202, 255);
+          border-left: 5px solid rgb(88, 202, 255);
+          border-radius: 50%;
+          box-shadow: 10px 0px 40px rgb(155, 198, 255);
+
+          animation: animate2 1s linear infinite;
+        }
+        .dot3 {
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border: 5px solid rgb(88, 202, 255);
+          border-radius: 50%;
+          animation: animate3 1s linear infinite;
+        }
+
+        @keyframes animate2 {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes animate3 {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(-360deg);
+          }
+        }
+      </style>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          min-height: 420px;
+        "
+      >
+        <!-- <div class="LoadingLogo2">
+          <img src="<%= context.config.publicPath +'partlogo.svg'%>" />
+          <img src="<%= context.config.publicPath +'partlogo.svg'%>" />
+          <img src="<%= context.config.publicPath +'partlogo.svg'%>" />
+          <img src="<%= context.config.publicPath +'partlogo.svg'%>" />
+        </div> -->
+
+        <div class="content-loading">
+          <div class="dot0"></div>
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+          <div class="dot3"></div>
+          <div class="dot4"></div>
+          <div></div>
+        </div>
+        <div style="display: none; align-items: center; justify-content: center">
+          <img
+            src="<%= context.config.publicPath +'pro_icon.svg'%>"
+            width="100"
+            style="margin-right: 8px"
+          />
+          CRM Onexus
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

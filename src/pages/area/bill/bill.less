@@ -1,0 +1,169 @@
+.clock {
+    display: none;
+}
+
+.container-bill {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 45px);
+
+    .container-left {
+        width: 64%;
+        height: 100%;
+        padding: 10px 0 10px 10px;
+
+        .container-menu {
+            width: 100%;
+            height: 16%;
+            min-height: 140px;
+            padding-bottom: 7px;
+
+            .menu {
+                width: 100%;
+                height: 100%;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                position: relative;
+
+                .swiper {
+                    width: 74%;
+                    // width: 100%;
+                    height: 100%;
+                    padding: 0 5px;
+
+
+
+                    .swiper-wrapper {
+                        display: flex;
+                        align-items: center;
+
+
+                        .selected {
+                            background-color: #E5E5E5 !important;
+
+                            &::after {
+                                content: url('./assets/tick.svg');
+                                position: absolute;
+                                left: 2.42%;
+                                right: 85.48%;
+                                top: 5.32%;
+                                bottom: 78.72%;
+                            }
+                        }
+
+                        .swiper-slide {
+                            // width: 12.8%;
+                            // height: 84.6%;
+                            // min-width: 80px;
+                            // min-height: 60px;
+                            width: 12.8%;
+                            height: 84.6%;
+                            min-width: 124px;
+                            min-height: 94px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            cursor: pointer;
+
+                            img {
+                                display: block;
+                                width: 67%;
+                                height: 70%;
+                                min-width: 54px;
+                                min-height: 42px;
+                                object-fit: cover;
+                                border-radius: 7px;
+                            }
+
+                            span {
+                                font-family: 'Roboto';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 14px;
+                                padding-top: 3px;
+                            }
+                        }
+                    }
+
+
+
+                }
+
+
+                .swiper-button-prev {
+                    left: 24px;
+
+
+                    &::before {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        content: url('./assets/prev.svg');
+                        background: #3D91DE;
+                        line-height: 0;
+                        border-radius: 100%;
+
+                        width: 23px;
+                        height: 23px;
+
+                    }
+
+                    &::after {
+                        content: '';
+                    }
+                }
+
+                .swiper-button-next {
+                    right: 24px;
+
+
+                    &::before {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        content: url('./assets/next.svg');
+                        background: #3D91DE;
+                        line-height: 0;
+                        border-radius: 100%;
+
+                        width: 23px;
+                        height: 23px;
+
+                    }
+
+                    &::after {
+                        content: '';
+                    }
+                }
+            }
+        }
+    }
+
+    .product {
+        width: 100%;
+        height: 84%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.container-right {
+    width: 36%;
+    height: 100%;
+    padding: 10px;
+
+    .bill {
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

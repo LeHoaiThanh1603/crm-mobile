@@ -1,0 +1,113 @@
+.input-component {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background: #ffffff;
+  border-radius: 10px;
+  outline: none;
+  transition: box-shadow 0.5s;
+  transition: 0.3s;
+  input {
+    background: transparent;
+  }
+  .medium {
+    font-size: 14px;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}
+
+.input-disalbed {
+  background: #efefef;
+  cursor: not-allowed;
+}
+.text-component {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #3e5c76;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+.ant-input-number {
+  background: #ffffff;
+  border: 1px solid #3e5c76;
+  border-radius: 10px;
+}
+.ant-input-number-input {
+  margin-top: -1px;
+}
+.ant-input-number-handler-wrap {
+  top: 2px;
+  right: 5.5px;
+  width: 15px;
+  height: 24px;
+  overflow: hidden;
+  background: #4086f7;
+  border-radius: 5px;
+  opacity: 1;
+
+  img {
+    width: 9px;
+  }
+
+  .ant-input-number-handler-up-inner,
+  .ant-input-number-handler-down-inner {
+    //top: 5.5px;
+    left: 1.5px;
+  }
+}
+
+.ant-input-number-handler-up {
+  display: flex;
+  justify-content: center;
+  border: none;
+
+  &:active {
+    background-color: #55aec6;
+  }
+}
+.ant-input-number-handler-down {
+  border: none;
+
+  &:active {
+    background-color: #55aec6;
+  }
+}
+.normal {
+  border: 1px solid rgba(62, 92, 118, 0.8);
+  &:hover {
+    border-color: #55aec6;
+  }
+  &:focus-within {
+    border-color: rgba(85, 174, 198, 0.8);
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    transition: box-shadow 0.5s;
+  }
+}
+.err {
+  border: 1px solid #a93838;
+  &:hover {
+    border-color: #a93838;
+  }
+  &:focus-within {
+    border-color: #a93838;
+    box-shadow: 0 0 0 2px #a938386c;
+    transition: box-shadow 0.5s;
+  }
+}
+
+.pass-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  img {
+    position: absolute;
+    right: 0.5rem;
+    cursor: pointer;
+  }
+}

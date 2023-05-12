@@ -1,0 +1,60 @@
+@import '~/src/e2e/variables.less';
+.lang {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: black;
+  background-size: contain;
+  cursor: pointer;
+  img {
+    width: 40px;
+  }
+  .dropDown {
+    position: absolute;
+    top: 110%;
+    right: 0rem;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    background: white;
+    border-radius: 10px;
+    box-shadow: @box-shadow;
+    transition: 0.5s;
+    animation: lang 0.2s;
+    img {
+      width: 40px;
+      object-fit: cover;
+    }
+    div:not(:last-child) {
+      border-bottom: 1px solid #6e6e6e41;
+    }
+    div {
+      div {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        padding: 0.5rem;
+        font-weight: 400;
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+      }
+      div:hover {
+        background: rgba(48, 50, 51, 0.212);
+      }
+    }
+  }
+
+  @keyframes lang {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

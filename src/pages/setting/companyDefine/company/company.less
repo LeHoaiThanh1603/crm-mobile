@@ -1,0 +1,47 @@
+.add-company-container {
+  max-height: 80vh;
+
+  .industry-company {
+    height: 30px;
+    border: 1px solid rgb(62, 92, 118);
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      border-color: #55aec6 !important;
+    }
+  }
+
+  // .ant-select-selector {
+  //   border: 1px solid rgb(62, 92, 118) !important;
+  //   border-radius: 10px !important;
+  //   &:hover {
+  //     border-color: #55aec6 !important;
+  //   }
+  // }
+  @media (max-height: 760px) {
+    overflow-y: auto;
+  }
+  .input-item-container {
+    width: 92%;
+
+    .dropdown-container {
+      z-index: 13;
+      gap: 4px;
+      width: inherit;
+      max-height: 150px;
+      padding: 5px 10px;
+      overflow: auto;
+      background-color: white;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 0px 0px 10px 10px;
+    }
+  }
+
+  .industry-company-cursor {
+    cursor: pointer !important;
+
+    input {
+      cursor: pointer !important;
+    }
+  }
+}

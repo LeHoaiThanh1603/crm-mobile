@@ -1,0 +1,56 @@
+.wrapRating {
+  margin-bottom: 30px;
+}
+
+.Header {
+  display: flex;
+  height: 150px;
+  max-height: 150px;
+  padding: 30px;
+  background-color: #fffbf8;
+  border: 1px solid #f9ede5;
+}
+
+.feedbackStar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+.feedBackStar {
+  color: #ee4d2d;
+  font-size: 20px;
+}
+
+.rateVote {
+  margin-right: 6px;
+  font-size: 40px;
+}
+
+.btn-optionStar {
+  display: flex;
+  gap: 8px;
+}
+
+.reservationInfo {
+  display: flex;
+  gap: 10px;
+}
+
+.Feedback {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  max-height: 200px;
+  margin-top: 20px;
+}
+
+.ant-image-mask-info {
+  display: none;
+}
+
+.ant-rate-star:not(:last-child) {
+  margin-right: 4px !important;
+}

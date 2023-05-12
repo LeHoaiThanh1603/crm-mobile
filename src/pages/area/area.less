@@ -1,0 +1,65 @@
+@import '~/src/e2e/variables.less';
+
+.area-container {
+  width: 100vw;
+  height: calc(100vh - 4.125rem);
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 0.875rem;
+  font-style: normal;
+  line-height: 1.0625rem;
+
+  .header-container {
+    height: 5rem;
+
+    padding-left: 3.625rem;
+
+    .area-title {
+      width: 4.5rem;
+      height: 1.875rem;
+      background: #ffffff;
+      border: 0.0625rem solid #354f52;
+      border-radius: 0.625rem;
+
+      &:hover {
+        border: 0.0625rem solid #058391;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .clock {
+    top: 56px !important;
+  }
+}
+@media screen and (max-width: 2200px) {
+  .location-container {
+    max-width: 1536px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1256px) {
+  .location-container .locationinfo-container img {
+    width: 196px;
+  }
+}
+
+@media screen and (max-width: 1184px) {
+  .location-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 826px) {
+  .location-container .locationinfo-container img {
+    width: 185px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .location-container {
+    width: 447px;
+    margin: 0 auto;
+  }
+}

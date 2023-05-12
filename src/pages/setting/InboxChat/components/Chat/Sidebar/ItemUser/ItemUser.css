@@ -1,0 +1,120 @@
+.css-10hburv-MuiTypography-root {
+  font-weight: 400 !important;
+}
+
+.wrapperUser {
+  cursor: pointer;
+}
+
+.itemConversation {
+  display: flex;
+  align-items: center;
+}
+
+.useItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.active {
+  background: var(--primary-chat-bg);
+  border-radius: 12px;
+}
+
+.mode {
+  /* width: 16px; */
+}
+
+.channelName {
+  margin-left: 6px;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.mode img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.wrapTime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.time {
+  flex: 1;
+  font-weight: bold;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.read {
+  color: #2c2c2c;
+}
+
+.no-read {
+  color: #000;
+  font-weight: bold !important;
+}
+
+.wrapperText {
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wrapAvatar {
+  position: relative;
+  margin-top: 10px;
+}
+
+.WrapIconOnline {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  padding: 2px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.iconOnline {
+  width: 10px;
+  height: 10px;
+  background: #5ba124;
+  border-radius: 50%;
+}
+
+.imgSidebar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.imgSidebarEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  background: #c9e5ff;
+  border-radius: 50%;
+}
+
+.css-hhvo2v-MuiListItem-root {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.notSeen span {
+  font-weight: bold !important;
+}
+.css-konndc-MuiListItemText-root {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

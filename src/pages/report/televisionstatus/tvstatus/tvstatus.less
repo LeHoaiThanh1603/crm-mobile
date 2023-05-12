@@ -1,0 +1,37 @@
+@import '~/src/e2e/variables.less';
+
+.tvstatus-container {
+  width: 100vw;
+  height: calc(100vh - 131px);
+  margin: 0;
+  padding: 0;
+  // font-family: Roboto sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+  .floors-container {
+    height: 100%;
+    overflow: auto;
+    border-radius: 0.625rem 0.625rem 0 0;
+
+    .sticky-container {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: inline-block;
+      flex-shrink: 0;
+      min-width: 5.5rem;
+      // background: #fff;
+    }
+
+    .tv-container {
+      max-width: calc(100% - 5.5rem);
+      height: 100%;
+    }
+    .ant-spin {
+      height: 80vh !important;
+      max-height: none !important;
+    }
+  }
+}

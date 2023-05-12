@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container,
+.container-fluid{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    display: table;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+table::after,
+table::before {
+    box-sizing: border-box;
+}
+.TextCenter{
+    text-align: center;
+}
+.btn-right{
+    margin-left: 81%;
+}
+.btn_mr15{
+    margin-left: 15px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container {
+    /* tw-flex flex-column justify-content-center m-auto gap-3 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.title {
+    min-width: 150px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+.save-btn {
+    margin-top: 30px;
+    text-align: end;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.content-box {
+    width: 100%;
+}
+
+.mode-btn {
+    padding: 8px 12px;
+}
+
+.list-groups {
+    margin-right: 100px;
+}
+
+.groups-list {
+    padding: 8px 10px;
+}
+.flex{
+    display: flex;
+}
+.ml_50{
+    margin-left: 50px;
+}
+.mrTop{
+    margin-top: 20px;
+}
+
+.mb{
+    margin-bottom: 20px;
+}
+

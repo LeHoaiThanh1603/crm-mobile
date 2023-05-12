@@ -1,0 +1,71 @@
+.chat-container {
+  .ant-radio-wrapper {
+    font-size: 14px !important;
+  }
+
+  .btn-upload {
+    width: 40px !important;
+    height: 40px !important;
+    border: none !important;
+    box-shadow: none;
+  }
+
+  .message-container {
+    background: url(./assets/background.jpg);
+  }
+
+  .welcome-group {
+    padding-bottom: 200px;
+    background: linear-gradient(0deg, rgba(27, 27, 27, 0.3), rgba(27, 27, 27, 0.3)),
+      url(./assets/backgroundEmpty.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+      color: white;
+    }
+  }
+
+  .day-group {
+    top: 0px;
+    left: 50%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif !important;
+    border-radius: 10px;
+  }
+
+  .uploadFile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: 30px;
+    padding: 10px;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    input {
+      position: absolute;
+      width: 1000%;
+      height: 1000%;
+      cursor: pointer;
+      opacity: 11;
+      opacity: 0;
+    }
+  }
+
+  .image-container {
+    span {
+      display: flex;
+      align-items: center;
+
+      .ant-upload-list-picture {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .ant-upload-list-picture-container {
+          width: 200px;
+        }
+      }
+    }
+  }
+}

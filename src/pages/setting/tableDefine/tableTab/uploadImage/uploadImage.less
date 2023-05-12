@@ -1,0 +1,47 @@
+.upload {
+  position: inherit;
+  width: 100%;
+
+  &-card {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #3e5c76;
+    border-radius: 10px;
+
+    .upload-header {
+      height: 30px;
+      border-bottom: 1px solid #3e5c76;
+    }
+
+    .uploader {
+      &-wrap {
+        overflow: hidden;
+        border-radius: 50%;
+
+        &-img {
+          flex-shrink: 0;
+          width: 100px;
+          height: 100px;
+          // min-width: 100%;
+          // min-height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .operation-img {
+      gap: 0 0.9375rem;
+
+      .preview-img,
+      .remove-img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .avatar-uploader .ant-upload.ant-upload-select-picture-card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+}

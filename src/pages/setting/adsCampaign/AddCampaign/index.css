@@ -1,0 +1,279 @@
+.container,
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+}
+table {
+  display: table;
+  box-sizing: border-box;
+  text-indent: initial;
+  caption-side: bottom;
+  border-color: grey;
+  border-collapse: collapse;
+  border-spacing: 2px;
+}
+table::after,
+table::before {
+  box-sizing: border-box;
+}
+.TextCenter {
+  text-align: center;
+}
+.btn-right {
+  margin-left: 81%;
+}
+.btn_mr15 {
+  margin-left: 15px;
+}
+.header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.container {
+  /* tw-flex flex-column justify-content-center m-auto gap-3 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.title {
+  display: inline-block;
+  min-width: 160px;
+  font-weight: bold;
+}
+
+.save-btn {
+  margin-top: 30px;
+  text-align: end;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.content-box {
+  width: 100%;
+}
+
+.mode-btn {
+  padding: 8px 12px;
+}
+
+.list-groups {
+  margin-right: 100px;
+}
+
+.groups-list {
+  padding: 8px 10px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.ml_50 {
+  margin-left: 50px;
+}
+.mrTop {
+  margin-top: 20px;
+}
+
+.mb {
+  margin-bottom: 35px;
+}
+
+.css-1e2bxag-MuiDataGrid-root .MuiDataGrid-columnHeader:focus,
+.css-1e2bxag-MuiDataGrid-root .MuiDataGrid-cell:focus {
+  outline: none !important;
+}
+
+
+
+.preview-content {
+  height: 90%;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.logo {
+  display: block;
+  width: 260px;
+}
+
+.titlePreview {
+  width: 100%;
+  margin: 25px 0 10px;
+}
+
+.buttonLink {
+  width: 100%;
+  color: #fff;
+}
+
+.param {
+  font-weight: bold;
+}
+
+.darkmode {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 12px;
+}
+
+.react-datepicker-ignore-onclickoutside,
+.react-datepicker__input-container input {
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.css-1mcnwpj-MuiList-root {
+  height: 140px;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  will-change: scroll-position;
+  overscroll-behavior: contain;
+}
+
+.css-1mcnwpj-MuiList-root::-webkit-scrollbar {
+  display: none;
+}
+.css-1mcnwpj-MuiList-root:hover::-webkit-scrollbar {
+  display: block;
+  width: 4px;
+}
+
+.css-1mcnwpj-MuiList-root::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.wrapperW {
+  min-height: 480px;
+}
+
+
+.tableTemplate {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.templateContent {
+  width: fit-content;
+  block-size: fit-content;
+}
+
+.TableContent {
+  display: -webkit-box;
+  width: 400px;
+  max-width: 400px;
+  height: fit-content;
+  max-height: 100px;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.tableTags {
+  padding: 6px;
+  color: #fff;
+  text-align: center;
+  background-color: #1976d2;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.iconTags {
+}
+
+.iconTags img {
+  width: 40px;
+}
+
+.previewSMS {
+}
+
+.previewSMSbody {
+  position: relative;
+  padding: 12px 16px;
+
+  background-color: #ccc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.listSelectGroups {
+  width: 100%;
+  max-width: 360px;
+  max-height: 150px;
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+@media (max-width: 425px) {
+  .widthData{
+    width: 100%;
+  }
+  .modelTemplate {
+    width: 100% !important;
+  }
+  .FlexBlock{
+    display: flex;
+  }
+}
+@media(min-width: 426px) and (max-width: 1023px) {
+  .widthData{
+    width: 100%;
+  }
+  .modelTemplate {
+    width: 30% !important;
+  }
+  .FlexBlock{
+    display: flex;
+  }
+  .preview {
+    width: 100%;
+    /* margin-left: 30px; */
+    padding: 30px;
+    background: #f0f2f7;
+    /* margin-top: -715px; */
+  }
+  /* .marginTop400{
+    margin-top: 420px;
+  } */
+}
+@media (min-width: 1024px) {
+  .widthData{
+    width: 100%;
+  }
+  .modelTemplate {
+    width: 50% !important;
+  }
+  .FlexBlock{
+    display: flex;
+  }
+  .preview {
+    width: 50%;
+    margin-left: 30px;
+    padding: 30px;
+    background: #f0f2f7;
+  }
+}

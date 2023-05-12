@@ -1,0 +1,17 @@
+export default {
+  'component.tagSelect.expand': '展開',
+  'component.tagSelect.collapse': '折りたたむ',
+  'component.tagSelect.all': 'すべて',
+  'component.button.edit': '保存する',
+  'component.button.add': '足す',
+  'component.button.undo': 'アンドゥ',
+  'component.button.save': 'セーブ',
+  'component.button.delete': 'デリート',
+  'component.button.print': 'プリンター',
+  'component.button.delete2': '修理',
+  'component.button.back': 'バック',
+  'component.button.close': 'クローズ',
+  'component.button.alert': 'アラート',
+  'component.button.cancel': 'キャンセル',
+  'component.button.importexcel': 'Excelをインポートする',
+};

@@ -1,0 +1,9 @@
+.wrapper-add{
+    width: 1000px;
+    margin: auto;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,26 @@
+.MuiTabPanel-root {
+  height: calc(100vh - 72px);
+  padding: 24px 0 0 24px !important;
+}
+
+:root {
+  --primary-chat-bg: #ccffff46;
+  --body-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --msger-bg: #fff;
+  --border: 2px solid #ddd;
+  --left-msg-bg: #ececec;
+  --right-msg-bg: #579ffb;
+  --msg-del-right: #86afe4;
+  --msg-del-left: #dfdfdf;
+  --type-msg-bg: #ac52ff;
+}
+
+body {
+  -ms-overflow-style: none; /* cho  Internet Explorer, Edge */
+  scrollbar-width: none; /* cho Firefox */
+}
+
+.chat {
+  display: flex;
+  max-height: 100%;
+}

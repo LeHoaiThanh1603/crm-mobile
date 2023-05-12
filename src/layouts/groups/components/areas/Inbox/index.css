@@ -1,0 +1,11 @@
+.messagesContainer {
+         height: calc(100% - 64px);
+         overflowY: scroll,
+       }
+.messageContainer{
+         display: flex;
+         alignItems : flex-start,
+       }
+.messageAuthor {
+         fontWeight: bold,
+       }
